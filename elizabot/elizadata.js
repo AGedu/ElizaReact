@@ -320,266 +320,271 @@ var elizaKeywords = [
     "Non sei sicuro di te (3).",
     "Dubiti davvero di te (3)?"
    ]],
- ["* i* @belief *you *", [
-     "goto you"
+ ["* io* @credo *tu *", [
+     "vai da te"
   ]],
- ["* i am *", [
-     "Is it because you are (2) that you came to me ?",
-     "How long have you been (2) ?",
-     "Do you believe it is normal to be (2) ?",
-     "Do you enjoy being (2) ?",
-     "Do you know anyone else who is (2) ?"
+ ["* io sono *", [
+     "È perché sei (2) che sei venuto da me?",
+     "Da quanto tempo sei (2)?",
+     "Credi che sia normale essere (2)?",
+     "Ti piace essere (2)?",
+     "Conosci qualcun altro che è (2)?"
   ]],
- ["* i @cannot *", [
-     "How do you know that you can't (3) ?",
-     "Have you tried ?",
-     "Perhaps you could (3) now.",
-     "Do you really want to be able to (3) ?",
-     "What if you could (3) ?"
+ ["* non posso *", [
+     "Come fai a sapere che non puoi (3)?",
+     "Hai provato ?",
+     "Forse potresti (3) ora.",
+     "Vuoi davvero essere in grado di (3)?",
+     "E se potessi (3)?"
   ]],
- ["* i don't *", [
-     "Don't you really (2) ?",
-     "Why don't you (2) ?",
-     "Do you wish to be able to (2) ?",
-     "Does that trouble you ?"
+ ["* Io non *", [
+     "Non sei davvero (2)?",
+     "Perché non (2)?",
+     "Vuoi essere in grado di (2)?",
+     "Ti dà fastidio?"
   ]],
- ["* i feel *", [
-     "Tell me more about such feelings.",
-     "Do you often feel (2) ?",
-     "Do you enjoy feeling (2) ?",
-     "Of what does feeling (2) remind you ?"
+ ["* io sento *", [
+     "Dimmi di più su tali sentimenti.",
+     "Ti senti spesso (2)?",
+     "Ti piace sentire (2)?",
+     "Di cosa ti ricorda il sentimento (2)?"
   ]],
- ["* i * you *", [
-     "Perhaps in your fantasies we (2) each other.",
-     "Do you wish to (2) me ?",
-     "You seem to need to (2) me.",
-     "Do you (2) anyone else ?"
+ ["* io tu *", [
+     "Forse nelle tue fantasie ci (2) l'un l'altro.",
+     "Vuoi (2) me?",
+     "Sembra che tu abbia bisogno di (2) me.",
+     "Tu (2) qualcun altro?"
   ]],
  ["*", [
-     "You say (1) ?",
-     "Can you elaborate on that ?",
-     "Do you say (1) for some special reason ?",
-     "That's quite interesting."
+     "Tu dici (1)?",
+     "Puoi approfondire?",
+     "Dici (1) per qualche motivo speciale?",
+     "Questo è piuttosto interessante."
   ]]
 ]],
-["you", 0, [
- ["* you remind me of *", [
-     "goto alike"
+["tu", 0, [
+ ["* mi ricordi *", [
+     "vai allo stesso modo"
   ]],
- ["* you are *", [
-     "What makes you think I am (2) ?",
-     "Does it please you to believe I am (2) ?",
-     "Do you sometimes wish you were (2) ?",
-     "Perhaps you would like to be (2)."
+ ["* siete *", [
+     "Cosa ti fa pensare che io sia (2)?",
+     "Ti piace credere che io sia (2)?",
+     "A volte vorresti essere (2)?",
+     "Forse vorresti essere (2)."
+  // ]],
+["* tu* io *", [
+     "Perché pensi che io (2) tu?",
+     "Ti piace pensare che io (2) tu -- vero?",
+     "Cosa ti fa pensare che io (2) tu?",
+     "Davvero, io (2) tu?",
+     "Vuoi credere che io (2) te?",
+     "Supponiamo che io abbia fatto (2) te - cosa significherebbe?",
+     "Qualcun altro crede che io (2) te?"
   ]],
- ["* you* me *", [
-     "Why do you think I (2) you ?",
-     "You like to think I (2) you -- don't you ?",
-     "What makes you think I (2) you ?",
-     "Really, I (2) you ?",
-     "Do you wish to believe I (2) you ?",
-     "Suppose I did (2) you -- what would that mean ?",
-     "Does someone else believe I (2) you ?"
-  ]],
- ["* you *", [
-     "We were discussing you -- not me.",
-     "Oh, I (2) ?",
-     "You're not really talking about me -- are you ?",
-     "What are your feelings now ?"
+ ["* Voi *", [
+     "Stavamo discutendo di te, non di me.",
+     "Oh, io (2)?",
+     "Non stai davvero parlando di me, vero?",
+     "Quali sono i tuoi sentimenti adesso?"
   ]]
 ]],
-["yes", 0, [
+["sì", 0, [
  ["*", [
-     "You seem to be quite positive.",
-     "You are sure.",
-     "I see.",
-     "I understand."
+     "Sembri abbastanza positivo.",
+     "Sei sicuro.",
+     "Vedo.",
+     "Capisco."
   ]]
 ]],
 ["no", 0, [
- ["* no one *", [
-     "Are you sure, no one (2) ?",
-     "Surely someone (2) .",
-     "Can you think of anyone at all ?",
-     "Are you thinking of a very special person ?",
-     "Who, may I ask ?",
-     "You have a particular person in mind, don't you ?",
-     "Who do you think you are talking about ?"
+ ["* nessuno *", [
+     "Sei sicuro, nessuno (2)?",
+     "Sicuramente qualcuno (2) .",
+     "Riesci a pensare a qualcuno?",
+     "Stai pensando a una persona molto speciale?",
+     "Chi, posso chiedere?",
+     "Hai in mente una persona in particolare, vero?",
+     "Di chi pensi di parlare?"
   ]],
  ["*", [
-     "Are you saying no just to be negative?",
-     "You are being a bit negative.",
-     "Why not ?",
-     "Why 'no' ?"
+     "Stai dicendo di no solo per essere negativo?",
+     "Sei un po' negativo.",
+     "Perchè no ?",
+     "Perché no' ?"
   ]]
 ]],
-["my", 2, [
- ["$ * my *", [
-     "Does that have anything to do with the fact that your (2) ?",
-     "Lets discuss further why your (2).",
-     "Earlier you said your (2).",
-     "But your (2)."
+["mio", 2, [
+ ["$ * mio *", [
+     "Ha qualcosa a che fare con il fatto che il tuo (2) ?",
+     "Discutiamo ulteriormente perché il tuo (2).",
+     "Prima hai detto il tuo (2).",
+     "Ma il tuo (2)."
   ]],
- ["* my* @family *", [
-     "Tell me more about your family.",
-     "Who else in your family (4) ?",
-     "Your (3) ?",
-     "What else comes to your mind when you think of your (3) ?"
+ ["* la mia famiglia *", [
+     "Dimmi di più sulla tua famiglia.",
+     "Chi altro nella tua famiglia (4)?",
+     "Il tuo (3)?",
+     "Cos'altro ti viene in mente quando pensi al tuo (3)?"
   ]],
- ["* my *", [
-     "Your (2) ?",
-     "Why do you say your (2) ?",
-     "Does that suggest anything else which belongs to you ?",
-     "Is it important to you that your (2) ?"
+["* mio *", [
+     "Il tuo (2)?",
+     "Perché dici il tuo (2)?",
+     "Questo suggerisce qualcos'altro che ti appartiene?",
+     "È importante per te che il tuo (2)?"
   ]]
 ]],
-["can", 0, [
- ["* can you *", [
-     "You believe I can (2) don't you ?",
-     "goto what",
-     "You want me to be able to (2).",
-     "Perhaps you would like to be able to (2) yourself."
+["può", 0, [
+ ["* può *", [
+     "Credi che io possa (2) non è vero?",
+     "vai a cosa",
+     "Vuoi che io sia in grado di (2).",
+     "Forse ti piacerebbe essere in grado di (2) te stesso."
   ]],
- ["* can i *", [
-     "Whether or not you can (2) depends on you more than on me.",
-     "Do you want to be able to (2) ?",
-     "Perhaps you don't want to (2).",
-     "goto what"
+ ["* posso *", [
+     "Se puoi o meno (2) dipende da te più che da me.",
+     "Vuoi essere in grado di (2)?",
+     "Forse non vuoi (2).",
+     "vai a cosa"
   ]]
 ]],
-["what", 0, [
+["cosa", 0, [
  ["*", [
-     "Why do you ask ?",
-     "Does that question interest you ?",
-     "What is it you really want to know ?",
-     "Are such questions much on your mind ?",
-     "What answer would please you most ?",
-     "What do you think ?",
-     "What comes to mind when you ask that ?",
-     "Have you asked such questions before ?",
-     "Have you asked anyone else ?"
+     "Perché lo chiedi ?",
+     "Ti interessa questa domanda?",
+     "Cosa vuoi veramente sapere?",
+     "Sono domande simili nella tua mente?",
+     "Quale risposta ti piacerebbe di più?",
+     "Cosa pensi ?",
+     "Cosa ti viene in mente quando me lo chiedi?",
+     "Hai fatto domande simili prima?",
+     "Hai chiesto a qualcun altro?"
   ]]
 ]],
-["who", 0, [
- ["who *", [
-     "goto what"
+["chi", 0, [
+ ["chi *", [
+     "vai a cosa"
   ]]
 ]],
-["when", 0, [
- ["when *", [
-     "goto what"
+["quando", 0, [
+ ["quando *", [
+     "vai a cosa"
   ]]
 ]],
-["where", 0, [
- ["where *", [
-     "goto what"
+["dove", 0, [
+ ["dove *", [
+     "vai a cosa"
   ]]
 ]],
-["how", 0, [
- ["how *", [
-     "goto what"
+["come", 0, [
+ ["come *", [
+     "vai a cosa"
   ]]
 ]],
-["because", 0, [
+["perché", 0, [
  ["*", [
-     "Is that the real reason ?",
-     "Don't any other reasons come to mind ?",
-     "Does that reason seem to explain anything else ?",
-     "What other reasons might there be ?"
+     "È questo il vero motivo?",
+     "Non mi vengono in mente altri motivi?",
+     "Questo motivo sembra spiegare qualcos'altro?",
+     "Quali altri motivi potrebbero esserci?"
   ]]
 ]],
-["why", 0, [
- ["* why don't you *", [
-     "Do you believe I don't (2) ?",
-     "Perhaps I will (2) in good time.",
-     "Should you (2) yourself ?",
-     "You want me to (2) ?",
-     "goto what"
+["perché", 0, [
+ ["* perché non lo fai *", [
+     "Credi che io non (2)?",
+     "Forse lo farò (2) in tempo utile.",
+     "Dovresti (2) te stesso?",
+     "Vuoi che io (2)?",
+     "vai a cosa"
   ]],
- ["* why can't i *", [
-     "Do you think you should be able to (2) ?",
-     "Do you want to be able to (2) ?",
-     "Do you believe this will help you to (2) ?",
-     "Have you any idea why you can't (2) ?",
-     "goto what"
+ ["* perché non posso *", [
+     "Pensi che dovresti essere in grado di (2)?",
+     "Vuoi essere in grado di (2)?",
+     "Credi che questo ti aiuterà a (2)?",
+     "Hai idea del perché non puoi (2)?",
+     "vai a cosa"
   ]],
  ["*", [
-     "goto what"
+     "vai a cosa"
   ]]
 ]],
-["everyone", 2, [
- ["* @everyone *", [
-     "Really, (2) ?",
-     "Surely not (2).",
-     "Can you think of anyone in particular ?",
-     "Who, for example?",
-     "Are you thinking of a very special person ?",
-     "Who, may I ask ?",
-     "Someone special perhaps ?",
-     "You have a particular person in mind, don't you ?",
-     "Who do you think you're talking about ?"
+
+["tutti", 2, [
+ ["* @tutti *", [
+     "Davvero, (2)?",
+     "Sicuramente no (2).",
+     "Riesci a pensare a qualcuno in particolare?",
+     "Chi, per esempio?",
+     "Stai pensando a una persona molto speciale?",
+     "Chi, posso chiedere?",
+     "Qualcuno di speciale forse?",
+     "Hai in mente una persona in particolare, vero?",
+     "Di chi pensi di parlare?"
   ]]
 ]],
-["everybody", 2, [
+
+["tutti", 2, [
  ["*", [
-     "goto everyone"
+     "vai a tutti"
   ]]
 ]],
-["nobody", 2, [
+["nessuno", 2, [
  ["*", [
-     "goto everyone"
+     "vai a tutti"
   ]]
 ]],
-["noone", 2, [
+["nessuno", 2, [
  ["*", [
-     "goto everyone"
+     "vai a tutti"
   ]]
 ]],
-["always", 1, [
+
+["sempre", 1, [
  ["*", [
-     "Can you think of a specific example ?",
-     "When ?",
-     "What incident are you thinking of ?",
-     "Really, always ?"
+     "Ti viene in mente un esempio specifico?",
+     "Quando ?",
+     "A quale incidente stai pensando?",
+     "Davvero, sempre?"
   ]]
 ]],
-["alike", 10, [
+
+["uguale", 10, [
  ["*", [
-     "In what way ?",
-     "What resemblence do you see ?",
-     "What does that similarity suggest to you ?",
-     "What other connections do you see ?",
-     "What do you suppose that resemblence means ?",
-     "What is the connection, do you suppose ?",
-     "Could there really be some connection ?",
-     "How ?"
+     "In quale modo ?",
+     "Che somiglianza vedi?",
+     "Cosa ti suggerisce questa somiglianza?",
+     "Quali altri collegamenti vedi?",
+     "Cosa pensi che significhi quella somiglianza?",
+     "Qual è il collegamento, secondo te?",
+     "Potrebbe davvero esserci qualche connessione?",
+     "Come ?"
   ]]
 ]],
-["like", 10, [
- ["* @be *like *", [
-     "goto alike"
+
+["mi piace", 10, [
+ ["* @essere come *", [
+     "vai allo stesso modo"
   ]]
 ]],
-["different", 0, [
+
+["diverso", 0, [
  ["*", [
-     "How is it different ?",
-     "What differences do you see ?",
-     "What does that difference suggest to you ?",
-     "What other distinctions do you see ?",
-     "What do you suppose that disparity means ?",
-     "Could there be some connection, do you suppose ?",
-     "How ?"
+    "In che modo è diverso?",
+    "Che differenze vedi?",
+    "Cosa ti suggerisce questa differenza?",
+    "Quali altre distinzioni vedi?",
+    "Cosa pensi che significhi disparità?",
+    "Potrebbe esserci qualche collegamento, secondo te?",
+    "Come?"
   ]]
 ]]
-
 ];
 
 var elizaPostTransforms = [
-	/ old old/g, " old",
-	/\bthey were( not)? me\b/g, "it was$1 me",
-	/\bthey are( not)? me\b/g, "it is$1 me",
-	/Are they( always)? me\b/, "it is$1 me",
-	/\bthat your( own)? (\w+)( now)? \?/, "that you have your$1 $2 ?",
-	/\bI to have (\w+)/, "I have $1",
-	/Earlier you said your( own)? (\w+)( now)?\./, "Earlier you talked about your $2."
+/ vecchio vecchio/g, " vecchio",
+/\berano (non)? io\b/g, "era $1 io",
+/\bsono (non)? io\b/g, "sono $1 io",
+/Lo sono (sempre)? io\b/, "sono $1 io",
+/\bche il tuo (proprio)? (\w+)( ora)? \?/, "hai i tuoi $ 1 $ 2 ?",
+/\bHo (\w+)/, "Ho $1",
+/Prima hai detto il tuo (proprio)? (\w+)( ora)?\./, "Prima hai parlato dei tuoi $ 2."
 ];
