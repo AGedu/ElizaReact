@@ -386,7 +386,7 @@ var elizaKeywords = [
     "Non stai davvero parlando di me, vero?",
     "Quali sono i tuoi sentimenti adesso?"
   ]]
-]],
+]]],
 ["sì", 0, [
  ["*", [
     "Sembri abbastanza positivo.",
@@ -576,7 +576,7 @@ var elizaKeywords = [
     "Come?"
   ]]
 ]]
-];
+]];
 
 var elizaPostTransforms = [
 /vecchio vecchio/g, "vecchio",
