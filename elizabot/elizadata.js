@@ -313,7 +313,7 @@ var elizaKeywords = [
     "Puoi spiegare perché sei improvvisamente (3)?"
    ]],
  ["* io ero *", [
-      "vai era"
+    "vai era"
    ]],
  ["* io @credo di essere *", [
     "Lo pensi davvero?",
@@ -321,248 +321,247 @@ var elizaKeywords = [
     "Dubiti davvero di te (3)?"
    ]],
  ["* io* @credo *tu *", [
-     "vai da te"
+    "vai da te"
   ]],
  ["* io sono *", [
-     "È perché sei (2) che sei venuto da me?",
-     "Da quanto tempo sei (2)?",
-     "Credi che sia normale essere (2)?",
-     "Ti piace essere (2)?",
-     "Conosci qualcun altro che è (2)?"
+    "È perché sei (2) che sei venuto da me?",
+    "Da quanto tempo sei (2)?",
+    "Credi che sia normale essere (2)?",
+    "Ti piace essere (2)?",
+    "Conosci qualcun altro che è (2)?"
   ]],
  ["* non posso *", [
-     "Come fai a sapere che non puoi (3)?",
-     "Hai provato ?",
-     "Forse potresti (3) ora.",
-     "Vuoi davvero essere in grado di (3)?",
-     "E se potessi (3)?"
+    "Come fai a sapere che non puoi (3)?",
+    "Hai provato ?",
+    "Forse potresti (3) ora.",
+    "Vuoi davvero essere in grado di (3)?",
+    "E se potessi (3)?"
   ]],
  ["* Io non *", [
-     "Non sei davvero (2)?",
-     "Perché non (2)?",
-     "Vuoi essere in grado di (2)?",
-     "Ti dà fastidio?"
+    "Non sei davvero (2)?",
+    "Perché non (2)?",
+    "Vuoi essere in grado di (2)?",
+    "Ti dà fastidio?"
   ]],
  ["* io sento *", [
-     "Dimmi di più su tali sentimenti.",
-     "Ti senti spesso (2)?",
-     "Ti piace sentire (2)?",
-     "Di cosa ti ricorda il sentimento (2)?"
+    "Dimmi di più su tali sentimenti.",
+    "Ti senti spesso (2)?",
+    "Ti piace sentire (2)?",
+    "Di cosa ti ricorda il sentimento (2)?"
   ]],
  ["* io tu *", [
-     "Forse nelle tue fantasie ci (2) l'un l'altro.",
-     "Vuoi (2) me?",
-     "Sembra che tu abbia bisogno di (2) me.",
-     "Tu (2) qualcun altro?"
+    "Forse nelle tue fantasie ci (2) l'un l'altro.",
+    "Vuoi (2) me?",
+    "Sembra che tu abbia bisogno di (2) me.",
+    "Tu (2) qualcun altro?"
   ]],
  ["*", [
-     "Tu dici (1)?",
-     "Puoi approfondire?",
-     "Dici (1) per qualche motivo speciale?",
-     "Questo è piuttosto interessante."
+    "Tu dici (1)?",
+    "Puoi approfondire?",
+    "Dici (1) per qualche motivo speciale?",
+    "Questo è piuttosto interessante."
   ]]
 ]],
 ["tu", 0, [
  ["* mi ricordi *", [
-     "vai allo stesso modo"
+    "vai allo stesso modo"
   ]],
  ["* siete *", [
-     "Cosa ti fa pensare che io sia (2)?",
-     "Ti piace credere che io sia (2)?",
-     "A volte vorresti essere (2)?",
-     "Forse vorresti essere (2)."
-  // ]],
+    "Cosa ti fa pensare che io sia (2)?",
+    "Ti piace credere che io sia (2)?",
+    "A volte vorresti essere (2)?",
+    "Forse vorresti essere (2)."
 ["* tu* io *", [
-     "Perché pensi che io (2) tu?",
-     "Ti piace pensare che io (2) tu -- vero?",
-     "Cosa ti fa pensare che io (2) tu?",
-     "Davvero, io (2) tu?",
-     "Vuoi credere che io (2) te?",
-     "Supponiamo che io abbia fatto (2) te - cosa significherebbe?",
-     "Qualcun altro crede che io (2) te?"
+    "Perché pensi che io (2) tu?",
+    "Ti piace pensare che io (2) te -- vero?",
+    "Cosa ti fa pensare che io (2) tu?",
+    "Davvero, io (2) tu?",
+    "Vuoi credere che io (2) te?",
+    "Supponiamo che io abbia fatto (2) te - cosa significherebbe?",
+    "Qualcun altro crede che io (2) te?"
   ]],
  ["* Voi *", [
-     "Stavamo discutendo di te, non di me.",
-     "Oh, io (2)?",
-     "Non stai davvero parlando di me, vero?",
-     "Quali sono i tuoi sentimenti adesso?"
+    "Stavamo discutendo di te, non di me.",
+    "Oh, io (2)?",
+    "Non stai davvero parlando di me, vero?",
+    "Quali sono i tuoi sentimenti adesso?"
   ]]
 ]],
 ["sì", 0, [
  ["*", [
-     "Sembri abbastanza positivo.",
-     "Sei sicuro.",
-     "Vedo.",
-     "Capisco."
+    "Sembri abbastanza positivo.",
+    "Sei sicuro.",
+    "Vedo.",
+    "Capisco."
   ]]
 ]],
 ["no", 0, [
  ["* nessuno *", [
-     "Sei sicuro, nessuno (2)?",
-     "Sicuramente qualcuno (2) .",
-     "Riesci a pensare a qualcuno?",
-     "Stai pensando a una persona molto speciale?",
-     "Chi, posso chiedere?",
-     "Hai in mente una persona in particolare, vero?",
-     "Di chi pensi di parlare?"
+    "Sei sicuro, nessuno (2)?",
+    "Sicuramente qualcuno (2) .",
+    "Riesci a pensare a qualcuno?",
+    "Stai pensando a una persona molto speciale?",
+    "Chi, posso chiedere?",
+    "Hai in mente una persona in particolare, vero?",
+    "Di chi pensi di parlare?"
   ]],
  ["*", [
-     "Stai dicendo di no solo per essere negativo?",
-     "Sei un po' negativo.",
-     "Perchè no ?",
-     "Perché no' ?"
+    "Stai dicendo di no solo per essere negativo?",
+    "Sei un po' negativo.",
+    "Perché no ?",
+    "Perché 'no' ?"
   ]]
 ]],
 ["mio", 2, [
  ["$ * mio *", [
-     "Ha qualcosa a che fare con il fatto che il tuo (2) ?",
-     "Discutiamo ulteriormente perché il tuo (2).",
-     "Prima hai detto il tuo (2).",
-     "Ma il tuo (2)."
+    "Ha qualcosa a che fare con il fatto che il tuo (2) ?",
+    "Discutiamo ulteriormente perché il tuo (2).",
+    "Prima hai detto il tuo (2).",
+    "Ma il tuo (2)."
   ]],
  ["* la mia famiglia *", [
-     "Dimmi di più sulla tua famiglia.",
-     "Chi altro nella tua famiglia (4)?",
-     "Il tuo (3)?",
-     "Cos'altro ti viene in mente quando pensi al tuo (3)?"
+    "Dimmi di più sulla tua famiglia.",
+    "Chi altro nella tua famiglia (4)?",
+    "Il tuo (3)?",
+    "Cos'altro ti viene in mente quando pensi al tuo (3)?"
   ]],
 ["* mio *", [
-     "Il tuo (2)?",
-     "Perché dici il tuo (2)?",
-     "Questo suggerisce qualcos'altro che ti appartiene?",
-     "È importante per te che il tuo (2)?"
+    "Il tuo (2)?",
+    "Perché dici il tuo (2)?",
+    "Questo suggerisce qualcos'altro che ti appartiene?",
+    "È importante per te che il tuo (2)?"
   ]]
 ]],
 ["può", 0, [
  ["* può *", [
-     "Credi che io possa (2) non è vero?",
-     "vai a cosa",
-     "Vuoi che io sia in grado di (2).",
-     "Forse ti piacerebbe essere in grado di (2) te stesso."
+    "Credi che io possa (2) non è vero?",
+    "vai al punto",
+    "Vuoi che io sia in grado di (2).",
+    "Forse ti piacerebbe essere in grado di (2) te stesso."
   ]],
  ["* posso *", [
-     "Se puoi o meno (2) dipende da te più che da me.",
-     "Vuoi essere in grado di (2)?",
-     "Forse non vuoi (2).",
-     "vai a cosa"
+    "Se puoi o meno (2) dipende da te più che da me.",
+    "Vuoi essere in grado di (2)?",
+    "Forse non vuoi (2).",
+    "vai al punto"
   ]]
 ]],
 ["cosa", 0, [
  ["*", [
-     "Perché lo chiedi ?",
-     "Ti interessa questa domanda?",
-     "Cosa vuoi veramente sapere?",
-     "Sono domande simili nella tua mente?",
-     "Quale risposta ti piacerebbe di più?",
-     "Cosa pensi ?",
-     "Cosa ti viene in mente quando me lo chiedi?",
-     "Hai fatto domande simili prima?",
-     "Hai chiesto a qualcun altro?"
+    "Perché lo chiedi?",
+    "Ti interessa questa domanda?",
+    "Cosa vuoi veramente sapere?",
+    "Sono domande simili nella tua mente?",
+    "Quale risposta ti piacerebbe di più?",
+    "Cosa pensi?",
+    "Cosa ti viene in mente quando me lo chiedi?",
+    "Hai fatto domande simili prima?",
+    "Hai chiesto a qualcun altro?"
   ]]
 ]],
 ["chi", 0, [
  ["chi *", [
-     "vai a cosa"
+    "vai al punto"
   ]]
 ]],
 ["quando", 0, [
  ["quando *", [
-     "vai a cosa"
+    "vai al punto"
   ]]
 ]],
 ["dove", 0, [
  ["dove *", [
-     "vai a cosa"
+    "vai al punto"
   ]]
 ]],
 ["come", 0, [
  ["come *", [
-     "vai a cosa"
+    "vai al punto"
   ]]
 ]],
 ["perché", 0, [
  ["*", [
-     "È questo il vero motivo?",
-     "Non mi vengono in mente altri motivi?",
-     "Questo motivo sembra spiegare qualcos'altro?",
-     "Quali altri motivi potrebbero esserci?"
+    "È questo il vero motivo?",
+    "Non mi vengono in mente altri motivi?",
+    "Questo motivo sembra spiegare qualcos'altro?",
+    "Quali altri motivi potrebbero esserci?"
   ]]
 ]],
 ["perché", 0, [
  ["* perché non lo fai *", [
-     "Credi che io non (2)?",
-     "Forse lo farò (2) in tempo utile.",
-     "Dovresti (2) te stesso?",
-     "Vuoi che io (2)?",
-     "vai a cosa"
+    "Credi che io non (2)?",
+    "Forse lo farò (2) in tempo utile.",
+    "Dovresti (2) te stesso?",
+    "Vuoi che io (2)?",
+    "vai al punto"
   ]],
  ["* perché non posso *", [
-     "Pensi che dovresti essere in grado di (2)?",
-     "Vuoi essere in grado di (2)?",
-     "Credi che questo ti aiuterà a (2)?",
-     "Hai idea del perché non puoi (2)?",
-     "vai a cosa"
+    "Pensi che dovresti essere in grado di (2)?",
+    "Vuoi essere in grado di (2)?",
+    "Credi che questo ti aiuterà a (2)?",
+    "Hai idea del perché non puoi (2)?",
+    "vai al punto"
   ]],
  ["*", [
-     "vai a cosa"
+    "vai al punto"
   ]]
 ]],
 
 ["tutti", 2, [
  ["* @tutti *", [
-     "Davvero, (2)?",
-     "Sicuramente no (2).",
-     "Riesci a pensare a qualcuno in particolare?",
-     "Chi, per esempio?",
-     "Stai pensando a una persona molto speciale?",
-     "Chi, posso chiedere?",
-     "Qualcuno di speciale forse?",
-     "Hai in mente una persona in particolare, vero?",
-     "Di chi pensi di parlare?"
+    "Davvero, (2)?",
+    "Sicuramente no (2).",
+    "Riesci a pensare a qualcuno in particolare?",
+    "Chi, per esempio?",
+    "Stai pensando a una persona molto speciale?",
+    "Posso chiedere chi?",
+    "Qualcuno di speciale forse?",
+    "Hai in mente una persona in particolare, vero?",
+    "Di chi pensi di parlare?"
   ]]
 ]],
 
 ["tutti", 2, [
  ["*", [
-     "vai a tutti"
+    "vai a tutti"
   ]]
 ]],
 ["nessuno", 2, [
  ["*", [
-     "vai a tutti"
+    "vai a tutti"
   ]]
 ]],
 ["nessuno", 2, [
  ["*", [
-     "vai a tutti"
+    "vai a tutti"
   ]]
 ]],
 
 ["sempre", 1, [
  ["*", [
-     "Ti viene in mente un esempio specifico?",
-     "Quando ?",
-     "A quale incidente stai pensando?",
-     "Davvero, sempre?"
+    "Ti viene in mente un esempio specifico?",
+    "Quando?",
+    "A quale incidente stai pensando?",
+    "Davvero, sempre?"
   ]]
 ]],
 
 ["uguale", 10, [
  ["*", [
-     "In quale modo ?",
-     "Che somiglianza vedi?",
-     "Cosa ti suggerisce questa somiglianza?",
-     "Quali altri collegamenti vedi?",
-     "Cosa pensi che significhi quella somiglianza?",
-     "Qual è il collegamento, secondo te?",
-     "Potrebbe davvero esserci qualche connessione?",
-     "Come ?"
+    "In quale modo?",
+    "Che somiglianza vedi?",
+    "Cosa ti suggerisce questa somiglianza?",
+    "Quali altri collegamenti vedi?",
+    "Cosa pensi che significhi quella somiglianza?",
+    "Qual è il collegamento, secondo te?",
+    "Potrebbe davvero esserci qualche connessione?",
+    "Come?"
   ]]
 ]],
 
 ["mi piace", 10, [
  ["* @essere come *", [
-     "vai allo stesso modo"
+    "vai allo stesso modo"
   ]]
 ]],
 
@@ -573,14 +572,14 @@ var elizaKeywords = [
     "Cosa ti suggerisce questa differenza?",
     "Quali altre distinzioni vedi?",
     "Cosa pensi che significhi disparità?",
-    "Potrebbe esserci qualche collegamento, secondo te?",
+    "Potrebbe esserci qualche collegamento secondo te?",
     "Come?"
   ]]
 ]]
 ];
 
 var elizaPostTransforms = [
-/ vecchio vecchio/g, " vecchio",
+/vecchio vecchio/g, "vecchio",
 /\berano (non)? io\b/g, "era $1 io",
 /\bsono (non)? io\b/g, "sono $1 io",
 /Lo sono (sempre)? io\b/, "sono $1 io",
