@@ -68,44 +68,44 @@ var elizaKeywords = [
 
 ["xnone", 0, [
  ["*", [
-     "I'm not sure I understand you fully.",
-     "Please go on.",
-     "What does that suggest to you ?",
-     "Do you feel strongly about discussing such things ?",
-     "That is interesting.  Please continue.",
-     "Tell me more about that.",
-     "Does talking about this bother you ?"
+    "Non sono sicuro di capirti completamente.",
+    "Per favore vai avanti.",
+    "Cosa ti suggerisce?",
+    "Sei forte nel discutere di queste cose?",
+    "È interessante. Continua per favore.",
+    "Dimmi di più.",
+    "Parlare di questo ti dà fastidio?"
   ]]
 ]],
-["sorry", 0, [
+["scusa", 0, [
  ["*", [
-     "Please don't apologise.",
-     "Apologies are not necessary.",
-     "I've told you that apologies are not required.",
-     "It did not bother me.  Please continue."
+    "Per favore, non scusarti.",
+    "Le scuse non sono necessarie.",
+    "Ti ho detto che le scuse non sono necessarie.",
+    "Non mi ha infastidito. Per favore, continua."
   ]]
 ]],
 ["apologise", 0, [
  ["*", [
-     "goto sorry"
+    "vai a scusarti"
   ]]
 ]],
-["remember", 5, [
- ["* i remember *", [
-     "Do you often think of (2) ?",
-     "Does thinking of (2) bring anything else to mind ?",
-     "What else do you recollect ?",
-     "Why do you remember (2) just now ?",
-     "What in the present situation reminds you of (2) ?",
-     "What is the connection between me and (2) ?",
-     "What else does (2) remind you of ?"
+["ricorda", 5, [
+ ["* io ricordo *", [
+    "Pensi spesso a (2)?",
+    "Pensare a (2) ti fa venire in mente qualcos'altro?",
+    "Cos'altro ricordi?",
+    "Perché ricordi (2) proprio ora?",
+    "Cosa nella situazione attuale ti ricorda (2)?",
+    "Qual è la connessione tra me e (2)?",
+    "Cos'altro ti ricorda (2)?"
   ]],
- ["* do you remember *", [
-     "Did you think I would forget (2) ?",
-     "Why do you think I should recall (2) now ?",
-     "What about (2) ?",
-     "goto what",
-     "You mentioned (2) ?"
+ ["* ti ricordi *", [
+    "Pensavi che avrei dimenticato (2)?",
+    "Perché pensi che dovrei ricordare (2) ora?",
+    "E (2)?",
+    "vai a scusarti",
+    "Hai menzionato (2)?"
   ]],
  ["* you remember *", [
      "How could I forget (2) ?",
