@@ -1,13 +1,11 @@
 <html>
 	<head>
-		<title>ELIZA bot js</title>
+		<title>Eliza Bot JavaScript</title>
 		<script language="JavaScript" type="text/javascript" src="elizabot.js"></script>
 		<script language="JavaScript" type="text/javascript" src="elizadata.js"></script>
 		<script language="JavaScript" type="text/javascript">
-			
 			var eliza = new ElizaBot();
 			var elizaLines = new Array();
-
 			var displayCols = 60;
 			var displayRows = 20;
 
@@ -22,22 +20,25 @@
 				var userinput = f.e_input.value;
 				if(eliza.quit){
 					f.e_input.value = '';
-					if (confirm("This session is over.\nStart over?")) elizaReset();
+					if(confirm("Questa sessione è terminata, vuoi iniziarne un'altra?"))
+						elizaReset();
 					f.e_input.focus();
 					return;
 				}
 				else
 					if(userinput != ''){
 						var usr = 'YOU:   ' + userinput;
-						var rpl ='ELIZA: ' + eliza.transform(userinput);
+						var rpl = 'ELIZA: ' + eliza.transform(userinput);
 						elizaLines.push(usr);
 						elizaLines.push(rpl);
 						var temp = new Array();
 						var l = 0;
 						for(var i=elizaLines.length-1; i>=0; i--){
 							l += 1 + Math.floor(elizaLines[i].length/displayCols);
-							if (l >= displayRows) break
-							else temp.push(elizaLines[i]);
+							if(l >= displayRows)
+								break;
+							else
+								temp.push(elizaLines[i]);
 						}
 						elizaLines = temp.reverse();
 						f.e_display.value = elizaLines.join('\n');
@@ -54,18 +55,20 @@
 		</script>
 	</head>
 
-	<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="border:0" onload="window.setTimeout('elizaReset()',100)"><A name="top"></A>
+	<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="border:0" onload="window.setTimeout('elizaReset()',100)"><a name="top"></a>
 		<center>
 			<p>&nbsp;</p>
-			<h2>ELIZA</h2>
+			<h1>Eliza Bot</h1>
 			<table border="0" cellspacing="10" cellpadding="0">
-			<form name="e_form" onsubmit="elizaStep(); return false">
-			<tr><td colspan="2"><textarea name="e_display" cols="60" rows="20"></textarea></td></tr>
-			<tr valign="middle">
-				<td><INPUT type="text" name="e_input" size="50"></td>
-				<td align="right"><INPUT type="submit" value="&nbsp;Talk&nbsp;"> <INPUT type="reset" value="Reset" onClick="window.setTimeout('elizaReset()', 100)"></td>
-			</tr>
-			</form>
+				<form name="e_form" onsubmit="elizaStep(); return false">
+				<tr>
+					<td colspan="2"><textarea name="e_display" cols="60" rows="20"></textarea></td>
+				</tr>
+				<tr valign="middle">
+					<td><input type="text" name="e_input" size="50"></td>
+					<td align="right"><input type="submit" value="&nbsp;Talk&nbsp;"><input type="reset" value="Reset" onClick="window.setTimeout('elizaReset()', 100)"></td>
+				</tr>
+				</form>
 			</table>
 		</center>
 	</body>
