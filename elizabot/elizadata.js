@@ -107,219 +107,219 @@ var elizaKeywords = [
     "vai a scusarti",
     "Hai menzionato (2)?"
   ]],
- ["* you remember *", [
-     "How could I forget (2) ?",
-     "What about (2) should I remember ?",
-     "goto you"
+ ["* Ti ricordi *", [
+    "Come potrei dimenticare (2)?",
+    "Che cosa di (2) dovrei ricordare?",
+    "vai da te"
   ]]
 ]],
-["forget", 5, [
- ["* i forget *", [
-     "Can you think of why you might forget (2) ?",
-     "Why can't you remember (2) ?",
-     "How often do you think of (2) ?",
-     "Does it bother you to forget that ?",
-     "Could it be a mental block ?",
-     "Are you generally forgetful ?",
-     "Do you think you are suppressing (2) ?"
-  ]],
- ["* did you forget *", [
-     "Why do you ask ?",
-     "Are you sure you told me ?",
-     "Would it bother you if I forgot (2) ?",
-     "Why should I recall (2) just now ?",
-     "goto what",
-     "Tell me more about (2)."
+["dimentica", 5, [
+  ["* io dimentico *", [
+    "Riesci a pensare perché potresti dimenticare (2)?",
+    "Perché non ricordi (2)?",
+    "Quante volte pensi a (2)?",
+    "Ti dà fastidio dimenticarlo?",
+    "Potrebbe essere un blocco mentale?",
+    "Sei generalmente smemorato?",
+    "Pensi di sopprimere (2)?"
+   ]],
+ ["* Hai dimenticato *", [
+    "Perché lo chiedi?",
+    "Sei sicuro di avermelo detto?",
+    "Ti darebbe fastidio se dimenticassi (2)?",
+    "Perché dovrei ricordare (2) proprio ora?",
+    "vai a cosa",
+    "Dimmi di più su (2)."
+   ]]
+]],
+["se", 3, [
+  ["* se *", [
+    "Pensi che sia probabile che (2)?",
+    "Lo desideri (2)?",
+    "Cosa sai di (2)?",
+    "Davvero, se (2)?",
+    "Cosa faresti se (2)?",
+    "Ma quali sono le possibilità che (2)?",
+    "A cosa porta questa speculazione?"
   ]]
 ]],
-["if", 3, [
- ["* if *", [
-     "Do you think it's likely that (2) ?",
-     "Do you wish that (2) ?",
-     "What do you know about (2) ?",
-     "Really, if (2) ?",
-     "What would you do if (2) ?",
-     "But what are the chances that (2) ?",
-     "What does this speculation lead to ?"
-  ]]
+["sognato", 4, [
+  ["* ho sognato *", [
+    "Davvero, (2)?",
+    "Hai mai fantasticato (2) mentre eri sveglio?",
+    "Hai mai sognato (2) prima?",
+    "vai a sognare"
+   ]]
 ]],
-["dreamed", 4, [
- ["* i dreamed *", [
-     "Really, (2) ?",
-     "Have you ever fantasized (2) while you were awake ?",
-     "Have you ever dreamed (2) before ?",
-     "goto dream"
-  ]]
+["sogno", 3, [
+  ["*", [
+    "Cosa ti suggerisce quel sogno?",
+    "Sogni spesso?",
+    "Quali persone appaiono nei tuoi sogni?",
+    "Credi che i sogni abbiano qualcosa a che fare con il tuo problema?"
+   ]]
 ]],
-["dream", 3, [
+["forse", 0, [
+  ["*", [
+    "Non sembri del tutto sicuro.",
+    "Perché il tono incerto?",
+    "Non puoi essere più positivo?",
+    "Non sei sicuro?",
+    "Non lo sai?",
+    "Quanto è probabile?"
+   ]]
+]],
+["nome", 15, [
+  ["*", [
+    "Non mi interessano i nomi.",
+    "Te l'ho già detto, non mi interessano i nomi, per favore continua."
+   ]]
+]],
+["tedesco", 0, [
+  ["*", [
+    "vai all'estero",
+    "Te l'ho detto prima, non capisco il tedesco."
+   ]]
+]],
+["francese", 0, [
+  ["*", [
+    "vai all'estero",
+    "Te l'ho detto prima, non capisco il francese."
+   ]]
+]],
+["inglese", 0, [
  ["*", [
-     "What does that dream suggest to you ?",
-     "Do you dream often ?",
-     "What persons appear in your dreams ?",
-     "Do you believe that dreams have something to do with your problem ?"
+    "vai all'estero",
+    "Te l'ho detto prima, non capisco l'inglese."
   ]]
 ]],
-["perhaps", 0, [
+["spagnolo", 0, [
  ["*", [
-     "You don't seem quite certain.",
-     "Why the uncertain tone ?",
-     "Can't you be more positive ?",
-     "You aren't sure ?",
-     "Don't you know ?",
-     "How likely, would you estimate ?"
+    "vai all'estero",
+    "Te l'ho detto prima, non capisco lo spagnolo."
   ]]
 ]],
-["name", 15, [
- ["*", [
-     "I am not interested in names.",
-     "I've told you before, I don't care about names -- please continue."
-  ]]
+["straniero", 0, [
+  ["*", [
+      "Parlo solo l'italiano."
+   ]]
 ]],
-["deutsch", 0, [
- ["*", [
-     "goto xforeign",
-     "I told you before, I don't understand German."
-  ]]
-]],
-["francais", 0, [
- ["*", [
-     "goto xforeign",
-     "I told you before, I don't understand French."
-  ]]
-]],
-["italiano", 0, [
- ["*", [
-     "goto xforeign",
-     "I told you before, I don't understand Italian."
-  ]]
-]],
-["espanol", 0, [
- ["*", [
-     "goto xforeign",
-     "I told you before, I don't understand Spanish."
-  ]]
-]],
-["xforeign", 0, [
- ["*", [
-     "I speak only English."
-  ]]
-]],
-["hello", 0, [
- ["*", [
-     "How do you do.  Please state your problem.",
-     "Hi.  What seems to be your problem ?"
-  ]]
+["ciao", 0, [
+  ["*", [
+    "Come stai? Indica il tuo problema.",
+    "Ciao. Quale pensi che sia il tuo problema?"
+   ]]
 ]],
 ["computer", 50, [
+  ["*", [
+    "I computer ti preoccupano?",
+    "Perché parli di computer?",
+    "Cosa pensi che le macchine abbiano a che fare con il tuo problema?",
+    "Non pensi che i computer possano aiutare le persone?",
+    "E le macchine ti preoccupano?",
+    "Cosa ne pensi delle macchine?",
+    "Non pensi che io sia un programma per computer, vero?"
+   ]]
+]],
+["sono", 0, [
+  ["* sono io *", [
+      "Credi di essere (2)?",
+      "Vorresti essere (2)?",
+      "Vorresti che ti dicessi che sei (2)?",
+      "Cosa significherebbe se tu fossi (2)?",
+      "vai al punto"
+   ]],
+["* io sono *", [
+      "vai a io"
+   ]],
  ["*", [
-     "Do computers worry you ?",
-     "Why do you mention computers ?",
-     "What do you think machines have to do with your problem ?",
-     "Don't you think computers can help people ?",
-     "What about machines worries you ?",
-     "What do you think about machines ?",
-     "You don't think I am a computer program, do you ?"
+    "Perché dici 'sono'?",
+    "Non lo capisco."
   ]]
 ]],
-["am", 0, [
- ["* am i *", [
-     "Do you believe you are (2) ?",
-     "Would you want to be (2) ?",
-     "Do you wish I would tell you you are (2) ?",
-     "What would it mean if you were (2) ?",
-     "goto what"
-  ]],
- ["* i am *", [
-     "goto i"
-  ]],
- ["*", [
-     "Why do you say 'am' ?",
-     "I don't understand that."
-  ]]
+["sono", 0, [
+  ["* sei *", [
+    "Perché ti interessa sapere se io sono (2) o no?",
+    "Preferiresti se non fossi (2)?",
+    "Forse sono (2) nelle tue fantasie.",
+    "A volte pensi che io sia (2)?",
+    "vai a cosa",
+    "Ti importerebbe?",
+    "E se fossi (2)?"
+   ]],
+ ["* siete *", [
+      "vai da te"
+   ]],
+ ["* sono *", [
+    "Pensavi che potrebbero non essere (2)?",
+    "Ti piacerebbe se non fossero (2)?",
+    "E se non fossero (2)?",
+    "Sono sempre (2)?",
+    "Forse sono (2).",
+    "Sei sicuro che lo siano (2)?"
+   ]]
 ]],
-["are", 0, [
- ["* are you *", [
-     "Why are you interested in whether I am (2) or not ?",
-     "Would you prefer if I weren't (2) ?",
-     "Perhaps I am (2) in your fantasies.",
-     "Do you sometimes think I am (2) ?",
-     "goto what",
-     "Would it matter to you ?",
-     "What if I were (2) ?"
-  ]],
- ["* you are *", [
-     "goto you"
-  ]],
- ["* are *", [
-     "Did you think they might not be (2) ?",
-     "Would you like it if they were not (2) ?",
-     "What if they were not (2) ?",
-     "Are they always (2) ?",
-     "Possibly they are (2).",
-     "Are you positive they are (2) ?"
-  ]]
+["tuo", 0, [
+  ["* il tuo *", [
+    "Perché sei preoccupato per il mio (2)?",
+    "E il tuo (2)?",
+    "Sei preoccupato per il (2) di qualcun altro?",
+    "Davvero, il mio (2)?",
+    "Cosa ti fa pensare alla mia (2)?",
+    "Vuoi il mio (2)?"
+   ]]
 ]],
-["your", 0, [
- ["* your *", [
-     "Why are you concerned over my (2) ?",
-     "What about your own (2) ?",
-     "Are you worried about someone else's (2) ?",
-     "Really, my (2) ?",
-     "What makes you think of my (2) ?",
-     "Do you want my (2) ?"
-  ]]
+["era", 2, [
+  ["* ero io *", [
+    "E se tu fossi (2)?",
+    "Pensi di essere (2)?",
+    "Eri (2)?",
+    "Cosa significherebbe se tu fossi (2)?",
+    "Cosa ti suggerisce '(2)'?",
+    "vai a cosa"
+   ]],
+ ["* io ero *", [
+    "Eri davvero?",
+    "Perché mi dici che eri (2) adesso?",
+    "Forse so già che eri (2)."
+   ]],
+ ["* eri tu *", [
+    "Vuoi credere che fossi (2)?",
+    "Cosa suggerisce che fossi (2)?",
+    "Cosa pensi ?",
+    "Forse ero (2).",
+    "E se fossi stato (2)?"
+   ]]
 ]],
-["was", 2, [
- ["* was i *", [
-     "What if you were (2) ?",
-     "Do you think you were (2) ?",
-     "Were you (2) ?",
-     "What would it mean if you were (2) ?",
-     "What does ' (2) ' suggest to you ?",
-     "goto what"
-  ]],
- ["* i was *", [
-     "Were you really ?",
-     "Why do you tell me you were (2) now ?",
-     "Perhaps I already know you were (2)."
-  ]],
- ["* was you *", [
-     "Would you like to believe I was (2) ?",
-     "What suggests that I was (2) ?",
-     "What do you think ?",
-     "Perhaps I was (2).",
-     "What if I had been (2) ?"
-  ]]
-]],
-["i", 0, [
- ["* i @desire *", [
-     "What would it mean to you if you got (3) ?",
-     "Why do you want (3) ?",
-     "Suppose you got (3) soon.",
-     "What if you never got (3) ?",
-     "What would getting (3) mean to you ?",
-     "What does wanting (3) have to do with this discussion ?"
-  ]],
- ["* i am* @sad *", [
-     "I am sorry to hear that you are (3).",
-     "Do you think coming here will help you not to be (3) ?",
-     "I'm sure it's not pleasant to be (3).",
-     "Can you explain what made you (3) ?"
-  ]],
- ["* i am* @happy *", [
-     "How have I helped you to be (3) ?",
-     "Has your treatment made you (3) ?",
-     "What makes you (3) just now ?",
-     "Can you explain why you are suddenly (3) ?"
-  ]],
- ["* i was *", [
-     "goto was"
-  ]],
- ["* i @belief i *", [
-     "Do you really think so ?",
-     "But you are not sure you (3).",
-     "Do you really doubt you (3) ?"
-  ]],
+["io", 0, [
+  ["* @desidero *", [
+    "Cosa significherebbe per te se avessi (3)?",
+    "Perché vuoi (3)?",
+    "Supponiamo che tu abbia presto (3).",
+    "E se non avessi mai avuto (3)?",
+    "Cosa significherebbe per te ricevere (3)?",
+    "Cosa c'entra il volere (3) con questa discussione?"
+   ]],
+ ["* sono* @triste *", [
+    "Mi dispiace sapere che sei (3).",
+    "Pensi che venire qui ti aiuterà a non essere (3)?",
+    "Sono sicuro che non è piacevole essere (3).",
+    "Puoi spiegare cosa ti ha fatto (3)?"
+   ]],
+ ["* sono* @felice *", [
+    "Come ti ho aiutato ad essere (3)?",
+    "Il tuo trattamento ti ha reso (3)?",
+    "Cosa ti rende (3) proprio ora?",
+    "Puoi spiegare perché sei improvvisamente (3)?"
+   ]],
+ ["* io ero *", [
+      "vai era"
+   ]],
+ ["* io @credo di essere *", [
+    "Lo pensi davvero?",
+    "Non sei sicuro di te (3).",
+    "Dubiti davvero di te (3)?"
+   ]],
  ["* i* @belief *you *", [
      "goto you"
   ]],
