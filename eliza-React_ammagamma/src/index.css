@@ -1,0 +1,93 @@
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 650px;
+  padding: 10px;
+  background-color: white;
+}
+
+.app .titolo {
+  margin-bottom: 0;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.app .header{
+  border: 2px solid red;
+  width: 100%;
+  height: 75px;
+  background-color: pink;
+  top: 0px;
+  text-align: center;
+}
+
+.app .chatHistory{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow-y: auto;
+}
+
+
+.app .chatInput {
+  min-height: 38px;
+  width: 630px;
+  position:absolute;
+  bottom: 11px;
+}
+
+.app .chat{
+  border: 3px solid black;
+  height: 100%;
+  bottom: 0px;
+}
+
+#data{
+  color: grey;
+  font-size: 13px;
+}
+
+#user{
+  width: 300px;
+  background-color: pink;
+  border: 1px solid red;
+  position: relative;
+  left: 320px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+#eliza{
+  background-color: aqua;
+  border: 1px solid royalblue;
+  width: 300px;
+  position: relative;
+  left: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  
+}
+
+.app .chatMessage{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
