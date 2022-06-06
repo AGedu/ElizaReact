@@ -54,16 +54,8 @@ class ElizabotIta{
             "NOTFOUND" : {
                 "weight" : 0,
                 "responses" : [
-                        "cosa ti fa pensare?",
-                        "Non credo di capirti bene.",
-                        "Puoi parlarmene?",
-                        "Questo è al quanto interessante.",
-                        "Perfavore, dimmi di più.",
-                        "Cambiamo argomento... parlami un po' della tua famiglia",
-                        "Puoi parlarmene di più?",
-                        "Perchè mi dici questo *?"
-                    ]
-                },
+                        "cosa ti fa pensare?", "Non credo di capirti bene.", "Puoi parlarmene?", "Questo è al quanto interessante.", "Perfavore, dimmi di più.",
+                        "Cambiamo argomento... parlami un po' della tua famiglia", "Puoi parlarmene di più?", "Perchè mi dici questo *?"]},
             "scusa" : {
                 "weight" : 1,
                 "responses" : ["Non ti scusare.", "Non c'è bisogno di scusarsi."]},
@@ -200,33 +192,34 @@ class ElizabotIta{
 
         var synonyms = {
             "scusa" : ["mi dispiace"],
-            "un'altra lingua" : ["german", "tedesco", "french", "francese", "spanish", "spagnolo"],
+            "un'altra lingua" : ["german", "tedesco", "french", "francese", "spanish", "spagnolo"]
         };
         
         var endChatTerms = ["arrivederci","devo andare","devo andarmene","esci"];
-        var found = false; //variabile booleana che indica se è una parola chiave o meno
-	    var response = ''; //stringa che conterra la risposta
+        var found = false; //variabile che indica se una parola è una parola chiave o no
+	    var response = ''; //stringa che conterrà la risposta
         var keyword = '';
-	    
+
         //controlla che il messaggio non sia un messaggio di fine
 		for(var i=0; i<endChatTerms.length; i++)
             if(input === endChatTerms[i])
                 return "Arrivederci. Ricarica la pagina per iniziare una nuova chat";
-        
-        //controlla parola per parola 
-        var words = input.split(" ");
+
+        //controlla parola per parola
+        var words = input.split(' ');
         for(var j=0; j<words.length; j++){
             if(responses[words[j]]){
                 found = true;
                 keyword = words[j];
             }
-            else
+            else{
                 if(synonyms[words[j]]){
                     found = true;
                     keyword = synonyms[words[j]];
                 }
+            }
         }
-		
+
         if(found)
             response = responses[keyword].responses[Math.floor(Math.random()*responses[keyword].responses.length)];
 
@@ -236,6 +229,5 @@ class ElizabotIta{
 	    return response;
     }
 }
-
 
 export default ElizabotIta;

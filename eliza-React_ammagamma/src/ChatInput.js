@@ -4,31 +4,27 @@ import {Input} from 'semantic-ui-react';
 class ChatInput extends Component{
   constructor(props){
     super(props);
-    this.state = {
-      value: '',
-    };
+    this.state = { value: '' };
   }
 
   handleInput(input){
     this.props.inputHandler(this.state.value);
-    this.setState({
-      value: '',
-    })
+    this.setState({ value: '' });
   }
 
-  handleChange = (event) => {
+  handleChange(event){
     this.setState({
       value: event.target.value,
     });
   }
 
-  handleKeyDown = (event) => {
+  handleKeyDown(event){
     if (event.key === 'Enter'){
       this.handleInput();
     }
   }
 
-  handleClick = () => {
+  handleClick(){
     this.handleInput();
   }
 
