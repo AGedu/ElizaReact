@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import italianFlag from './italianFlag.jpg'
+import britishFlag from './britishFlag.jpg'
 
 class Language extends React.Component{
     constructor(props){
@@ -15,18 +17,18 @@ class Language extends React.Component{
     
     render(){
         return(
-            <div>   
-                <h1>CHOOSE LANGUAGE</h1>
+            <div>
+                <h1 id="title1">CHOOSE LANGUAGE</h1>
                 <div>
-                    <img src={"italianFlag.jpg"} id="ita" value="ita" onClick={this.handleClick}/>
-                    <h3>ITALIANO</h3>
+                    <img src={italianFlag} id="ita" value="ita" onClick={this.handleClick}/>
+                    <h3 className="subtitle">ITALIANO</h3>
                 </div>
                 <div>
-                    <img src={"britishFlag.jpg"} id="eng" value="eng" onClick={this.handleClick}/>
-                    <h3>ENGLISH</h3>
+                    <img src={britishFlag} id="eng" value="eng" onClick={this.handleClick}/>
+                    <h3 className="subtitle">ENGLISH</h3>
                 </div>
-            </div>    
-        ); 
+            </div>
+        );
     }
 
 }

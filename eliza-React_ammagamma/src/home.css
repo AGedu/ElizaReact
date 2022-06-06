@@ -1,0 +1,19 @@
+body{
+	background-color: antiquewhite;
+	text-align: center;
+}
+
+#title1{
+	color: red;
+}
+
+.subtitle{
+	color: blue;
+	margin-top: 7.5%;
+}
+
+#ita, #eng{
+	width: 300;
+	height: 200;
+	margin: 1.5% 2.5% 0 2.5%;
+}
