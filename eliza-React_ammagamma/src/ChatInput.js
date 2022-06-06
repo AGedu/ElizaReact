@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import { Input } from 'semantic-ui-react';
+import React, {Component} from 'react';
+import {Input} from 'semantic-ui-react';
 
-class ChatInput extends Component {
-  constructor(props) {
+class ChatInput extends Component{
+  constructor(props){
     super(props);
     this.state = {
       value: '',
     };
   }
 
-  handleInput(input) {
+  handleInput(input){
     this.props.inputHandler(this.state.value);
     this.setState({
       value: '',
@@ -23,7 +23,7 @@ class ChatInput extends Component {
   }
 
   handleKeyDown = (event) => {
-    if (event.key === 'Enter') {
+    if (event.key === 'Enter'){
       this.handleInput();
     }
   }
@@ -32,13 +32,13 @@ class ChatInput extends Component {
     this.handleInput();
   }
 
-  render() {
+  render(){
     return (
       <Input
         className="chatInput"
         onChange={this.handleChange}
         onKeyDown={this.handleKeyDown}
-        action={{ color: 'teal', icon: 'arrow right', onClick: this.handleClick}}
+        action={{color: 'teal', icon: 'arrow right', onClick: this.handleClick}}
         placeholder='Write to ELIZA...'
         value={this.state.value}
       />

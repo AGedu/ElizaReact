@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import ChatHistory from './ChatHistory'
 import ChatInput from './ChatInput'
 import ElizabotIta from './Eliza';
 import Language from './Language';
 
-
-
-class App extends Component {
+class App extends Component{
   constructor(props) {
     super(props);
     this.eliza = new ElizabotIta();
@@ -32,11 +30,8 @@ class App extends Component {
       text: input,
       date: new Date(),
     });
-    this.setState({
-      messages,
-    });
-    setTimeout(this.reply,1000);
-
+    this.setState({messages});
+    setTimeout(this.reply, 1000);
   }
 
   reply = () => {
@@ -55,31 +50,27 @@ class App extends Component {
       text: response,
       date: new Date(),
     });
-    this.setState({
-      messages,
-    });
+    this.setState({messages});
   }
 
-  fixup(text) {
+  fixup(text){
     return text.replace(/ \?/g, '?');
   }
+
   //{this.handleInput} = props   ctrl+k ctrl+c commenta una parte evidenziata
   
-  render() {
-    if(!this.state.first){
-      return (
-      <Language onClick={this.handleClick}></Language>
-     );
-    } 
+  render(){
+    if(!this.state.first)
+      return (<Language onClick={this.handleClick}></Language>);
     else{
-      return (
+      return(
         <div className="app">
           <div className='header'>
             <h3 className='titolo'>Chat with Eliza</h3>
           </div>
           <div className="chat">
-            <ChatHistory messages={this.state.messages} />
-            <ChatInput inputHandler={this.handleInput} />
+            <ChatHistory messages={this.state.messages}/>
+            <ChatInput inputHandler={this.handleInput}/>
           </div>
         </div>
       );
