@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
-import ElizaBot from 'elizabot';
 import ChatHistory from './ChatHistory'
 import ChatInput from './ChatInput'
-
+import ElizabotIta from './Eliza';
+import Language from './Language';
 
 
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.eliza = new ElizaBot();
+    this.eliza = new ElizabotIta();
     this.state = {
       messages: [{
         user: false,
-        text: this.fixup(this.eliza.getInitial()),
+        text: this.eliza.getInitialPhrase(),
         date: new Date(),
+        first: false,
       }],
     };
     
   }
 
   handleInput = (input) => {
+    this.input = input;
     input = input.trim();
     if (!input)
       return;
@@ -47,10 +49,10 @@ class App extends Component {
     }
     if (unreplied.length === 0)
       return;
-    let response = this.eliza.transform(unreplied.join(' '));
+    let response = this.eliza.calculateResponse(this.input);
     messages.push({
       user: false,
-      text: this.fixup(response),
+      text: response,
       date: new Date(),
     });
     this.setState({
@@ -62,19 +64,27 @@ class App extends Component {
     return text.replace(/ \?/g, '?');
   }
   //{this.handleInput} = props   ctrl+k ctrl+c commenta una parte evidenziata
+  
   render() {
-    return (
-      <div className="app">
-        <div className='header'>
-          <h3 className='titolo'>Chat with Eliza</h3>
+    if(!this.state.first){
+      return (
+      <Language onClick={this.handleClick}></Language>
+     );
+    } 
+    else{
+      return (
+        <div className="app">
+          <div className='header'>
+            <h3 className='titolo'>Chat with Eliza</h3>
+          </div>
+          <div className="chat">
+            <ChatHistory messages={this.state.messages} />
+            <ChatInput inputHandler={this.handleInput} />
+          </div>
         </div>
-        <div className="chat">
-          <ChatHistory messages={this.state.messages} />
-          <ChatInput inputHandler={this.handleInput} />
-        </div>
-      </div>
-    );
-  }
+      );
+    }  
+  }  
 }
 
 export default App;
