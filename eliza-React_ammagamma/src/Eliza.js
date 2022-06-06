@@ -40,9 +40,9 @@ class ElizabotIta{
                 newSplit[i] = currentInputWord;
         }
         var updatedMessage = '';
-        for(var i=0; i<newSplit.length; i++){
-            var word = newSplit[i];
-            if(updatedMessage != '')
+        for(var k=0; k<newSplit.length; k++){
+            var word = newSplit[k];
+            if(updatedMessage !== '')
                 updatedMessage += ' ';
             updatedMessage += word;
         }
@@ -209,19 +209,22 @@ class ElizabotIta{
         var keyword = '';
 	    
         //controlla che il messaggio non sia un messaggio di fine
-		for(var i=0;i<endChatTerms.length;i++)
+		for(var i=0; i<endChatTerms.length; i++)
             if(input === endChatTerms[i])
                 return "Arrivederci. Ricarica la pagina per iniziare una nuova chat";
         
         //controlla parola per parola 
         var words = input.split(" ");
-        for(var i=0;i<words.length;i++){
-            if(responses[words[i]]){
+        for(var j=0; j<words.length; j++){
+            if(responses[words[j]]){
                 found = true;
-                keyword = words[i];
-            }else if (synonyms[words[i]])
-                found = true;
-                keyword = synonyms[words[i]];
+                keyword = words[j];
+            }
+            else
+                if(synonyms[words[j]]){
+                    found = true;
+                    keyword = synonyms[words[j]];
+                }
         }
 		
         if(found)
