@@ -9,7 +9,7 @@ class Language extends React.Component{
     }
     
     handleClick(event){
-        this.setState({ language : event.target.id });
+        this.setState({ language: event.target.id });
     }
     
     render(){
