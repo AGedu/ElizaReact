@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 
-
 class ChatMessage extends Component{
   render = () => {
     const message = this.props.message;

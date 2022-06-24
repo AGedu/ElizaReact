@@ -46,9 +46,6 @@ class App extends Component{
         date: new Date()
       });
     }  
-  
-    
-
     this.setState({messages});
     var random = (Math.floor(Math.random() * 5)+1) * 1000;
     setTimeout(this.reply, random);
@@ -82,8 +79,6 @@ class App extends Component{
     this.setState({messages});
   }
 
-
-  
   render = () => {
       return(
         <div className="app">
@@ -98,6 +93,5 @@ class App extends Component{
       );
     }  
   }  
-
 
 export default App;

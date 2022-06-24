@@ -787,9 +787,6 @@ class ElizabotIta{
             ];
         }
         
-        
-        
-        
         var found = false; //variable that indicates if it's keyword or not
         var keyword = '';
 
@@ -798,8 +795,7 @@ class ElizabotIta{
             if(input === endChatTerms[i]){
                 if(language === "italiano" || language === "italian")
                     return "Arrivederci. Ricarica la pagina per iniziare una nuova chat";
-                else    
-                    return "Goodbye. Reload the page to start a new chat";
+                return "Goodbye. Reload the page to start a new chat";
             }        
         }            
         //we control the input word by word to decide the response
@@ -825,7 +821,6 @@ class ElizabotIta{
             return responses[keyword].responses[Math.floor(Math.random()*responses[keyword].responses.length)];
         else
 		    return responses["NOTFOUND"].responses[Math.floor(Math.random()*responses["NOTFOUND"].responses.length)];
-
     }
 }
 
