@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 
 class ChatMessage extends Component{
-  render(){
+  render = () => {
     const message = this.props.message;
     let author = 'ELIZA';
     let id = 'eliza';

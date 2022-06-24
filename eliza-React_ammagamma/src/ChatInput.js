@@ -7,34 +7,34 @@ class ChatInput extends Component{
     this.state = { value: '' };
   }
 
-  handleInput(input){
+  handleInput = (input) => {
     this.props.inputHandler(this.state.value);
     this.setState({ value: '' });
   }
 
-  handleChange(event){
+  handleChange = (event) => {
     this.setState({
       value: event.target.value,
     });
   }
 
-  handleKeyDown(event){
+  handleKeyDown = (event) => {
     if (event.key === 'Enter'){
       this.handleInput();
     }
   }
 
-  handleClick(){
+  handleClick = () => {
     this.handleInput();
   }
 
-  render(){
+  render = () => {
     return (
       <Input
         className="chatInput"
         onChange={this.handleChange}
         onKeyDown={this.handleKeyDown}
-        action={{color: 'teal', icon: 'arrow right', onClick: this.handleClick}}
+        action={{color: 'black', icon: 'arrow right', onClick: this.handleClick}}
         placeholder='Write to ELIZA...'
         value={this.state.value}
       />
