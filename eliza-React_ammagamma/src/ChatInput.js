@@ -4,24 +4,21 @@ import {Input} from 'semantic-ui-react';
 class ChatInput extends Component{
   constructor(props){
     super(props);
-    this.state = { value: '' };
+    this.state = {value: ''};
   }
 
   handleInput = (input) => {
     this.props.inputHandler(this.state.value);
-    this.setState({ value: '' });
+    this.setState({value: ''});
   }
 
   handleChange = (event) => {
-    this.setState({
-      value: event.target.value,
-    });
+    this.setState({value: event.target.value});
   }
 
   handleKeyDown = (event) => {
-    if (event.key === 'Enter'){
+    if (event.key === 'Enter')
       this.handleInput();
-    }
   }
 
   handleClick = () => {
@@ -29,14 +26,14 @@ class ChatInput extends Component{
   }
 
   render = () => {
-    return (
+    return(
       <Input
-        className="chatInput"
-        onChange={this.handleChange}
-        onKeyDown={this.handleKeyDown}
-        action={{color: 'black', icon: 'arrow right', onClick: this.handleClick}}
-        placeholder='Write to ELIZA...'
-        value={this.state.value}
+        className = "chatInput"
+        onChange = {this.handleChange}
+        onKeyDown = {this.handleKeyDown}
+        action = {{color: 'black', icon: 'arrow right', onClick: this.handleClick}}
+        placeholder = 'Write to ELIZA...'
+        value = {this.state.value}
       />
     );
   }

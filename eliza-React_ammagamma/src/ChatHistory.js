@@ -6,9 +6,7 @@ class ChatHistory extends Component{
     const messages = this.props.messages.map((message, index) => <ChatMessage key={index} message={message}/>);
 
     return(
-      <div className="chatHistory" id="chatHistory">
-        {messages}
-      </div>
+      <div className="chatHistory" id="chatHistory">{messages}</div>
     );
   }
 }
